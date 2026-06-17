@@ -3,33 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy for Unitr - Unit Converter App">
-  <title>Privacy Policy - Unitr</title>
+  <meta name="description" content="Privacy Policy for PixelKit - All-in-One Image Tools Studio">
+  <title>Privacy Policy - PixelKit</title>
   <style>
     :root {
-      --primary: #0066FF;
-      --text: #1a1a1a;
+      --primary:   #FF6B6B;
+      --secondary: #4ECDC4;
+      --text:      #1A1A2E;
       --text-secondary: #555;
-      --bg: #ffffff;
-      --bg-secondary: #f8f9fa;
-      --border: #e0e0e0;
+      --bg:        #ffffff;
+      --bg-secondary: #F7F8FC;
+      --border:    #e0e0e0;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --text: #e0e0e0;
+        --text:      #e0e0e0;
         --text-secondary: #aaa;
-        --bg: #0d1117;
+        --bg:        #0d1117;
         --bg-secondary: #161b22;
-        --border: #30363d;
+        --border:    #30363d;
       }
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -55,18 +52,14 @@
     .logo {
       width: 64px;
       height: 64px;
-      background: linear-gradient(135deg, #0066FF, #4D9FFF);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       border-radius: 16px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 16px;
-    }
-
-    .logo svg {
-      width: 32px;
-      height: 32px;
-      fill: white;
+      font-size: 28px;
+      color: white;
     }
 
     h1 {
@@ -155,6 +148,25 @@
       }
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: .95rem;
+    }
+
+    th, td {
+      padding: .75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--bg-secondary);
+      font-weight: 600;
+      color: var(--text);
+    }
+
     .contact-info {
       background: var(--bg-secondary);
       padding: 24px;
@@ -205,20 +217,16 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/>
-        </svg>
-      </div>
+      <div class="logo">&#128247;</div>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Unitr - Unit Converter App</p>
-      <div class="last-updated">Last Updated: June 7, 2026</div>
+      <p class="subtitle">PixelKit - All-in-One Image Tools Studio</p>
+      <div class="last-updated">Last Updated: June 16, 2026</div>
     </header>
 
     <section>
       <h2>1. Introduction</h2>
       <p>
-        Abdulghani Mawlood operates the Unitr mobile application (the "App"). 
+        Abdulghani Mawlood operates the PixelKit mobile application (the "App"). 
         This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
       </p>
       <p>
@@ -226,6 +234,9 @@
         Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, 
         please do not access the App.
       </p>
+      <div class="highlight-box">
+        <p><strong>Key Point:</strong> All image processing in PixelKit happens <em>locally on your device</em>. Your photos are never uploaded to our servers. We do not collect analytics, crash logs, or any usage statistics.</p>
+      </div>
     </section>
 
     <section>
@@ -233,15 +244,18 @@
       
       <h3>2.1 Information You Provide</h3>
       <p>
-        Unitr is designed to work <strong>without requiring any personal information</strong> from you. 
+        PixelKit is designed to work <strong>without requiring any personal information</strong> from you. 
         We do not ask for your name, email address, phone number, or any other personally identifiable information.
+      </p>
+      <p>
+        The only user input we process are the images you select for editing and any text you type into tools such as Watermark, Text on Image, or WiFi QR Code. This data is processed entirely on your device and is never transmitted to our servers.
       </p>
 
       <h3>2.2 Information Collected Automatically</h3>
       <p>When you use the App, we may collect the following types of information:</p>
       
       <div class="highlight-box">
-        <p><strong>Local App Data:</strong> Your conversion history, favorite unit pairs, and theme preferences are stored <strong>locally on your device</strong> using SharedPreferences. This data never leaves your device and is not transmitted to our servers.</p>
+        <p><strong>Local App Data:</strong> Your favorites, recent tools, theme preferences, JPEG quality settings, auto-delete settings, and in-app review status are stored <strong>locally on your device</strong> using SharedPreferences. This data never leaves your device and is not transmitted to our servers.</p>
       </div>
 
       <h3>2.3 Device Information & Advertising Data</h3>
@@ -250,34 +264,72 @@
       </p>
       <ul>
         <li>Device model and operating system version</li>
-        <li>Device Advertising ID (for ad personalization and analytics)</li>
-        <li>App version and usage statistics</li>
-        <li>Ad interaction data (impressions, clicks)</li>
+        <li>Device Advertising ID (for ad personalization)</li>
+        <li>App version and usage statistics (ad impressions, clicks)</li>
         <li>Approximate location (IP-based, for regional ad targeting)</li>
-        <li>Crash reports and performance data (to improve the App)</li>
       </ul>
     </section>
 
     <section>
-      <h2>3. Advertising and Third-Party Services</h2>
+      <h2>3. Data We Do <em>Not</em> Collect</h2>
+      <p>PixelKit explicitly does <strong>not</strong> collect or process the following:</p>
+      <ul>
+        <li><strong>Your photos or images:</strong> All image processing is done locally on your device. We never access, upload, or store your images.</li>
+        <li><strong>App interactions / Analytics:</strong> We do not track which tools you use, how often you use them, or your in-app behavior.</li>
+        <li><strong>Crash logs / Diagnostics:</strong> We do not collect crash reports or performance diagnostics.</li>
+        <li><strong>Personal identifiers:</strong> We do not collect your name, email, phone number, or address.</li>
+        <li><strong>Location data:</strong> We do not track your GPS location. AdMob may use approximate location at the country/region level.</li>
+        <li><strong>Contacts or messages:</strong> We do not access your contact list, SMS, or call history.</li>
+        <li><strong>Browsing history:</strong> We do not track your web browsing activity.</li>
+        <li><strong>WiFi credentials:</strong> WiFi QR Code tool uses your input locally to generate a QR image. We do not store or transmit network names or passwords.</li>
+        <li><strong>EXIF metadata from images:</strong> The Image Metadata tool displays EXIF data locally on your device. This data is not uploaded or stored by us.</li>
+      </ul>
+    </section>
 
-      <h3>3.1 Advertising</h3>
+    <section>
+      <h2>4. Advertising and Third-Party Services</h2>
+
+      <h3>4.1 Google AdMob</h3>
       <p>
-        Unitr uses <strong>Google AdMob</strong> to display advertisements. 
+        PixelKit uses <strong>Google AdMob</strong> to display advertisements. 
         AdMob may collect the following data to provide personalized or non-personalized ads:
       </p>
-      <ul>
-        <li><strong>Device Advertising ID</strong> (for personalized or non-personalized ads)</li>
-        <li>Device information (model, OS version, language)</li>
-        <li>App usage data and ad interaction data</li>
-        <li>IP address (for approximate location for regional ad targeting)</li>
-      </ul>
-      <p>
-        Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our App and/or other sites on the Internet. 
-        You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.
-      </p>
+      <table>
+        <tr>
+          <th>Data Type</th>
+          <th>Purpose</th>
+          <th>Shared With</th>
+        </tr>
+        <tr>
+          <td>Advertising ID</td>
+          <td>Display personalized/non-personalized advertisements</td>
+          <td>Google (AdMob)</td>
+        </tr>
+        <tr>
+          <td>Approximate Location</td>
+          <td>Regional ad targeting and ad relevance</td>
+          <td>Google (AdMob)</td>
+        </tr>
+        <tr>
+          <td>Device Information</td>
+          <td>Ad delivery, fraud prevention, ad format optimization</td>
+          <td>Google (AdMob)</td>
+        </tr>
+        <tr>
+          <td>IP Address</td>
+          <td>Fraud prevention and ad delivery</td>
+          <td>Google (AdMob)</td>
+        </tr>
+      </table>
 
-      <h3>3.2 Google AdMob Privacy</h3>
+      <h3>4.2 Ad Formats Used</h3>
+      <ul>
+        <li><strong>Banner Ads:</strong> Small ads shown at the bottom of the Home, Files, Favorites, and Settings screens.</li>
+        <li><strong>Interstitial Ads:</strong> Full-screen ads shown occasionally after completing a tool action.</li>
+        <li><strong>No Rewarded Ads:</strong> PixelKit does <em>not</em> use rewarded video ads requiring you to watch ads to unlock features.</li>
+      </ul>
+
+      <h3>4.3 Google AdMob Privacy</h3>
       <p>
         Google AdMob operates under Google's Privacy Policy. For more information on how Google uses data, 
         please visit: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
@@ -286,37 +338,44 @@
         You can learn more about Google AdMob's data practices at: 
         <a href="https://developers.google.com/admob/android/privacy" target="_blank" rel="noopener">https://developers.google.com/admob/android/privacy</a>
       </p>
+
+      <h3>4.4 Google Play In-App Review</h3>
+      <p>
+        PixelKit uses Google's In-App Review API to politely ask satisfied users to rate the App on the Play Store after several successful tool uses. This is entirely optional and respects your choice if declined.
+      </p>
     </section>
 
     <section>
-      <h2>4. How We Use Your Information</h2>
+      <h2>5. How We Use Your Information</h2>
       <p>We use the information we collect to:</p>
       <ul>
-        <li>Provide and maintain the App's core functionality</li>
-        <li>Save your conversion history and favorite unit pairs locally</li>
-        <li>Remember your theme preferences</li>
-        <li>Improve and optimize the App's performance</li>
+        <li>Provide and maintain the App's core functionality (all processing is local)</li>
+        <li>Save your preferences (theme, favorites, JPEG quality) locally on your device</li>
+        <li>Remember your recent tools and favorites for quick access</li>
         <li>Display relevant advertisements to support the App's ongoing development</li>
-        <li>Diagnose and fix crashes or technical issues</li>
+        <li>Request optional Play Store ratings via Google's In-App Review API</li>
       </ul>
     </section>
 
     <section>
-      <h2>5. Data Storage and Security</h2>
+      <h2>6. Data Storage and Security</h2>
       
-      <h3>5.1 Local Storage</h3>
+      <h3>6.1 Local Processing</h3>
       <p>
-        All your conversion history, favorites, and app preferences are stored <strong>locally on your device</strong> 
-        using Android's SharedPreferences. We do not store this data on any remote server.
+        All image editing, compression, conversion, and other processing occurs entirely on your device. Your images never leave your phone. We do not operate any backend servers for image processing.
       </p>
 
-      <h3>5.2 Clipboard Access</h3>
+      <h3>6.2 Temporary Files</h3>
       <p>
-        Unitr allows you to copy conversion results to your device's clipboard. This is a <strong>user-initiated action only</strong>. 
-        We do not access, read, or monitor your clipboard at any other time.
+        PixelKit creates temporary output files during processing (e.g., converted images, compressed images, PDFs, collages, circle crops, comparison exports). These are stored in your device's temporary directory and can be previewed, saved, shared, or deleted using the in-app File Manager. The operating system may also clear temporary files automatically over time.
       </p>
 
-      <h3>5.3 Data Security</h3>
+      <h3>6.3 Ad Data</h3>
+      <p>
+        Advertising-related data (Advertising ID, approximate location, device info) is transmitted securely via HTTPS to Google's AdMob servers. We do not retain or store this data ourselves.
+      </p>
+
+      <h3>6.4 Data Security</h3>
       <p>
         We implement appropriate technical measures to protect your information. 
         However, no method of transmission over the Internet or electronic storage is 100% secure. 
@@ -326,58 +385,61 @@
     </section>
 
     <section>
-      <h2>6. Your Data Protection Rights</h2>
-      <p>Depending on your location, you may have the following rights:</p>
-      
-      <h3>6.1 General Rights</h3>
+      <h2>7. Permissions We Request</h2>
+      <p>PixelKit requests the following Android permissions:</p>
       <ul>
-        <li><strong>Access:</strong> You can access all your data within the App (history, favorites)</li>
-        <li><strong>Deletion:</strong> You can clear your conversion history and remove favorites at any time within the App</li>
-        <li><strong>Correction:</strong> You can modify your app preferences (theme settings) in the Settings screen</li>
+        <li><strong>Internet:</strong> Required for loading advertisements.</li>
+        <li><strong>Camera:</strong> Required to capture photos directly within the app (e.g., Background Remover, Circle Crop, Collage Maker). We do not collect or upload camera data.</li>
+        <li><strong>Write External Storage (Android &le; 10 only):</strong> Required to save processed images to your device gallery on older Android versions. Modern Android uses scoped storage and does not require this permission.</li>
+      </ul>
+      <div class="highlight-box">
+        <p><strong>Important:</strong> We do not request read storage permissions. Image selection uses the Android Photo Picker, which does not require storage access permissions on Android 13+.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. Your Data Protection Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your data:</p>
+      
+      <h3>8.1 General Rights</h3>
+      <ul>
+        <li><strong>Opt-Out of Personalized Ads:</strong> Disable personalized advertising in your device settings or Google Ad Settings.</li>
+        <li><strong>Delete Temporary Files:</strong> Use the in-app File Manager to delete any files created by PixelKit.</li>
+        <li><strong>Clear Local Data:</strong> Uninstalling the App will remove all locally stored data from your device.</li>
       </ul>
 
-      <h3>6.2 GDPR Rights (for EU/EEA Users)</h3>
-      <p>If you are a resident of the European Economic Area (EEA), you have the following data protection rights:</p>
+      <h3>8.2 GDPR Rights (for EU/EEA Users)</h3>
+      <p>If you are a resident of the European Economic Area (EEA), you have the following data protection rights under the General Data Protection Regulation (GDPR):</p>
       <ul>
-        <li>The right to access, update, or delete your information</li>
-        <li>The right of rectification</li>
-        <li>The right to object to processing</li>
-        <li>The right of restriction</li>
-        <li>The right to data portability</li>
-        <li>The right to withdraw consent</li>
+        <li><strong>The right to access</strong> — You have the right to request copies of your personal data.</li>
+        <li><strong>The right to rectification</strong> — You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+        <li><strong>The right to erasure ("right to be forgotten")</strong> — You have the right to request that we erase your personal data, under certain conditions.</li>
+        <li><strong>The right to restrict processing</strong> — You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to object to processing</strong> — You have the right to object to our processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to data portability</strong> — You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        <li><strong>The right to withdraw consent</strong> — Where we rely on your consent to process your personal data, you have the right to withdraw that consent at any time.</li>
       </ul>
       <p>
-        Since all your data is stored locally on your device, you have complete control. 
-        Uninstalling the App will remove all locally stored data.
+        Since all your app data (favorites, recent tools, preferences) is stored locally on your device, you have complete control. Uninstalling the App will remove all locally stored data. If you wish to exercise any of these rights, please contact us at <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a>.
       </p>
 
-      <h3>6.3 Opting Out of Ads Personalization</h3>
+      <h3>8.3 Opting Out of Ads Personalization</h3>
       <p>
         You can opt out of personalized advertising at any time:
       </p>
       <ul>
-        <li>Through your device settings (Android: Settings → Google → Ads → Opt out of Ads Personalization)</li>
+        <li>Through your device settings (Android: <strong>Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</strong>)</li>
         <li>Through <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a></li>
       </ul>
 
-      <h3>6.4 Managing or Revoking Your Consent</h3>
+      <h3>8.4 Managing or Revoking Your Consent</h3>
       <p>
-        If you are located in the EEA, UK, or Switzerland, you can manage or withdraw your consent 
-        to personalized ads at any time through the in-app consent form. To access it:
-      </p>
-      <ul>
-        <li>Go to the App's <strong>Settings</strong> screen</li>
-        <li>Tap <strong>"Privacy Settings"</strong> or <strong>"Ad Preferences"</strong></li>
-        <li>The consent form will reappear, allowing you to change your choices</li>
-      </ul>
-      <p>
-        You may also contact us at <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a> 
-        to request changes to how your data is handled.
+        If you are located in the EEA, UK, or Switzerland, you can manage or withdraw your consent to personalized ads at any time through your device settings. Additionally, you may contact us at <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a> to request changes to how your data is handled.
       </p>
     </section>
 
     <section>
-      <h2>7. Children's Privacy</h2>
+      <h2>9. Children's Privacy</h2>
       <p>
         Our App is not intended for use by children under the age of 13 (or 16 in the EU). 
         We do not knowingly collect personally identifiable information from children. 
@@ -387,23 +449,7 @@
     </section>
 
     <section>
-      <h2>8. Third-Party Services</h2>
-      <p>Unitr may use the following third-party services:</p>
-      <ul>
-        <li><strong>Google Mobile Ads (AdMob)</strong> - For displaying advertisements</li>
-        <li><strong>Google Play Services</strong> - For app distribution and updates</li>
-      </ul>
-      <p>
-        These third-party services have their own Privacy Policies. We encourage you to review them:
-      </p>
-      <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-        <li><a href="https://developers.google.com/admob/android/privacy" target="_blank" rel="noopener">Google AdMob Privacy</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>9. U.S. State Age Verification Laws (Texas SB 2420)</h2>
+      <h2>10. U.S. State Age Verification Laws (Texas SB 2420)</h2>
       <p>
         In compliance with Texas' App Store Accountability Act (Texas SB 2420) and similar laws in other U.S. states,
         Google Play may provide our App with age signals indicating a user's age range or parental consent status
@@ -416,14 +462,50 @@
         after the required verification process is complete, in accordance with applicable law.</p>
       </div>
       <p>
-        Since Unitr is a general utility app with no age-restricted content, we do not restrict access
+        Since PixelKit is a general utility app with no age-restricted content, we do not restrict access
         based on age signals beyond what is required by law. We do not sell or share age signal data with any third parties.
       </p>
     </section>
 
     <section>
-      <h2>10. Changes to This Privacy Policy</h2>
+      <h2>11. Third-Party Services</h2>
+      <p>PixelKit integrates with the following third-party services:</p>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>Privacy Policy</th>
+        </tr>
+        <tr>
+          <td>Google AdMob</td>
+          <td>Google LLC</td>
+          <td>Display advertisements</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+        </tr>
+        <tr>
+          <td>Google Play In-App Review</td>
+          <td>Google LLC</td>
+          <td>Request app ratings on Play Store</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+        </tr>
+      </table>
+    </section>
 
+    <section>
+      <h2>12. International Data Transfers</h2>
+      <p>
+        Your information, including personal data, may be transferred to &mdash; and maintained on &mdash; computers located outside of your 
+        state, province, country, or other governmental jurisdiction where the data protection laws may differ from those in your jurisdiction.
+      </p>
+      <p>
+        If you are located outside the United States and choose to use the App, please note that we transfer data to 
+        Google LLC in the United States for advertising services (Google AdMob). By using the App, you consent to this transfer.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Changes to This Privacy Policy</h2>
       <p>
         We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy 
         at this page and updating the "Last Updated" date at the top. You are advised to review this Privacy Policy periodically 
@@ -435,23 +517,25 @@
     </section>
 
     <section>
-      <h2>11. International Data Transfers</h2>
+      <h2>14. Consent and Agreement</h2>
       <p>
-        Your information, including personal data, may be transferred to — and maintained on — computers located outside of your 
-        state, province, country, or other governmental jurisdiction where the data protection laws may differ from those in your jurisdiction.
-      </p>
-      <p>
-        If you are located outside the United States and choose to provide information to us, please note that we transfer the data, 
-        including personal data, to the United States and process it there (for services like Google AdMob).
+        By using PixelKit, you consent to our Privacy Policy and agree to its terms. 
+        This App complies with the Google Play Developer Program Policies and all applicable laws and regulations regarding data protection.
       </p>
     </section>
 
     <section>
-      <h2>12. Consent and Agreement</h2>
-      <p>
-        By using Unitr, you consent to our Privacy Policy and agree to its terms. 
-        This App complies with the Google Play Developer Program Policies and all applicable laws and regulations regarding data protection.
-      </p>
+      <h2>15. Open Source Licenses</h2>
+      <p>PixelKit uses the following open-source software:</p>
+      <ul>
+        <li>Flutter SDK &mdash; BSD License</li>
+        <li>Google Mobile Ads SDK &mdash; Apache 2.0</li>
+        <li>image (Dart image processing) &mdash; Apache 2.0</li>
+        <li>Provider (state management) &mdash; MIT License</li>
+        <li>qr_flutter &mdash; BSD License</li>
+        <li>share_plus &mdash; BSD License</li>
+        <li>And other packages as listed in the app's About section</li>
+      </ul>
     </section>
 
     <div class="contact-info">
@@ -460,16 +544,16 @@
         If you have any questions about this Privacy Policy, please contact us:
       </p>
       <ul>
-        <li><strong>Developer:</strong> Abdulghani </li>
+        <li><strong>Developer:</strong> Abdulghani Mawlood</li>
         <li><strong>Email:</strong> <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a></li>
-        <li><strong>App:</strong> Unitr - Unit Converter</li>
-        <li><strong>Package:</strong> com.aghani.unitrs</li>
+        <li><strong>App:</strong> PixelKit - All-in-One Image Tools Studio</li>
+        <li><strong>Terms of Service:</strong> <a href="https://abdulghani91.github.io/PixelKit/terms-of-service.html">View here</a></li>
       </ul>
     </div>
 
     <footer>
-      <p> 2026 Abdulghani. All rights reserved.</p>
-      <p>This Privacy Policy is effective as of June 7, 2026.</p>
+      <p>&copy; 2026 PixelKit. All rights reserved.</p>
+      <p>This Privacy Policy is effective as of June 16, 2026.</p>
     </footer>
   </div>
 </body>
